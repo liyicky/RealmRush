@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -455,32 +455,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 724343166675194670, guid: 6cceeb9e2d0a0f7489b2a42b387f4bc0, type: 3}
   m_PrefabInstance: {fileID: 144933795}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &166256162 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5040643765344069697, guid: b940df629b09f434dbb9fd487257db6c, type: 3}
-  m_PrefabInstance: {fileID: 486478764}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &166256163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166256162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ae272b8f25af43f1a0a85440e4116a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  list:
-  - {fileID: 1265050068}
-  - {fileID: 1285604934}
-  - {fileID: 2000889525}
-  - {fileID: 26022270}
-  - {fileID: 498874813}
-  - {fileID: 283086740}
-  - {fileID: 1110266452}
-  speed: 1
 --- !u!114 &283086740 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6523272962745675735, guid: c6b227edc90b64495b3a5391d548433e, type: 3}
@@ -783,6 +757,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8307017239128916770, guid: b940df629b09f434dbb9fd487257db6c, type: 3}
+      propertyPath: list.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307017239128916770, guid: b940df629b09f434dbb9fd487257db6c, type: 3}
+      propertyPath: list.Array.data[0]
+      value: 
+      objectReference: {fileID: 1265050068}
+    - target: {fileID: 8307017239128916770, guid: b940df629b09f434dbb9fd487257db6c, type: 3}
+      propertyPath: list.Array.data[1]
+      value: 
+      objectReference: {fileID: 1285604934}
+    - target: {fileID: 8307017239128916770, guid: b940df629b09f434dbb9fd487257db6c, type: 3}
+      propertyPath: list.Array.data[2]
+      value: 
+      objectReference: {fileID: 2000889525}
+    - target: {fileID: 8307017239128916770, guid: b940df629b09f434dbb9fd487257db6c, type: 3}
+      propertyPath: list.Array.data[3]
+      value: 
+      objectReference: {fileID: 26022270}
+    - target: {fileID: 8307017239128916770, guid: b940df629b09f434dbb9fd487257db6c, type: 3}
+      propertyPath: list.Array.data[4]
+      value: 
+      objectReference: {fileID: 498874813}
+    - target: {fileID: 8307017239128916770, guid: b940df629b09f434dbb9fd487257db6c, type: 3}
+      propertyPath: list.Array.data[5]
+      value: 
+      objectReference: {fileID: 283086740}
+    - target: {fileID: 8307017239128916770, guid: b940df629b09f434dbb9fd487257db6c, type: 3}
+      propertyPath: list.Array.data[6]
+      value: 
+      objectReference: {fileID: 1110266452}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b940df629b09f434dbb9fd487257db6c, type: 3}
 --- !u!1001 &491082156
@@ -1100,7 +1106,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4225630294573497873, guid: c6b227edc90b64495b3a5391d548433e, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4225630294573497873, guid: c6b227edc90b64495b3a5391d548433e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2095,7 +2101,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4225630294573497873, guid: c6b227edc90b64495b3a5391d548433e, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4225630294573497873, guid: c6b227edc90b64495b3a5391d548433e, type: 3}
       propertyPath: m_LocalPosition.x
