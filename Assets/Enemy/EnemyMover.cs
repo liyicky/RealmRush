@@ -7,12 +7,19 @@ public class EnemyMover : MonoBehaviour
     [SerializeField] List<Waypoint> path = new List<Waypoint>();
     [SerializeField] [Range(0f, 5f)] float speed = 1f;
 
+    Enemy enemy;
+
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         FindPath();
         ReturnToStart();
-        StartCoroutine(PrintWaypoints());
+        StartCoroutine(FollowWaypoints());
+    }
+
+    void Start()
+    {
+        enemy = GetComponent<Enemy>();
     }
 
     void FindPath()
@@ -32,7 +39,7 @@ public class EnemyMover : MonoBehaviour
         transform.position = path[0].transform.position;
     }
 
-    IEnumerator PrintWaypoints()
+    IEnumerator FollowWaypoints()
     {
         foreach (Waypoint waypoint in path) 
         {
@@ -49,8 +56,9 @@ public class EnemyMover : MonoBehaviour
                 yield return new WaitForEndOfFrame();
             }
         }
-
-        Destroy(gameObject);
+        // Enemy runs out of waypoints, dies
+        enemy.StealGold();
+        gameObject.SetActive(false);
     }
 
 }
